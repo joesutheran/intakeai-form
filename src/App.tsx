@@ -18,7 +18,7 @@ import { Step4 } from './steps/Step4'
 import { Step5 } from './steps/Step5'
 import { Step6 } from './steps/Step6'
 
-const WEBHOOK_URL = 'https://n8n-rbyy.onrender.com/webhook-test/intakeai-intake'
+const WEBHOOK_URL = 'https://n8n-rbyy.onrender.com/webhook/intakeai-intake'
 
 const stepComponents = [Step1, Step2, Step3, Step4, Step5, Step6]
 
