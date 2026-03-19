@@ -43,7 +43,7 @@ export const formSchema = z.object({
   dietary_restrictions: z.array(z.enum(['Dairy-free', 'Gluten-free'])).default([]),
   foods_to_avoid: z.string().default(''),
 
-  meals_per_day: z.coerce.number().int().min(3).max(5),
+  meals_per_day: z.coerce.number().int().min(0).max(2),
   plan_duration_weeks: z.coerce.number().int(),
   variety_tier: z.enum(['full_variety', 'weekly_meal_prep'], {
     required_error: 'Please select a variety option',
@@ -69,7 +69,7 @@ export const defaultValues = {
   dietary_preference: undefined,
   dietary_restrictions: [] as string[],
   foods_to_avoid: '',
-  meals_per_day: 3,
+  meals_per_day: 0,
   plan_duration_weeks: 4,
   variety_tier: undefined,
   disclaimer_acknowledged: undefined as unknown as true,

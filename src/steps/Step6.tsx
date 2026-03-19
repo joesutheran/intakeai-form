@@ -58,7 +58,7 @@ export function Step6() {
       </SummarySection>
 
       <SummarySection title="Plan settings">
-        <SummaryRow label="Meals/day" value={data.meals_per_day} />
+        <SummaryRow label="Snacks/day" value={data.meals_per_day} />
         <SummaryRow label="Duration" value={data.plan_duration_weeks ? `${data.plan_duration_weeks} weeks` : undefined} />
         <SummaryRow label="Variety" value={data.variety_tier ? varietyLabels[data.variety_tier] : undefined} />
       </SummarySection>
