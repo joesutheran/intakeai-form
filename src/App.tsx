@@ -131,6 +131,9 @@ export default function App() {
           <span className="text-accent">Intake</span>
           <span className="text-text">AI</span>
         </h1>
+        <p className="mt-2 text-sm text-text-secondary max-w-xs mx-auto leading-snug">
+          Smash your body composition goals with a custom AI Agent planning your nutrition.
+        </p>
       </motion.div>
 
       {/* Card */}
