@@ -43,7 +43,7 @@ export function SuccessScreen() {
       >
         <h2 className="text-2xl font-bold text-text">Plan generation started</h2>
         <p className="text-text-secondary text-base leading-relaxed max-w-sm mx-auto">
-          Your client's personalised nutrition plan is being built. It will be delivered shortly.
+          Your personalised nutrition AI Agent is being built. More instructions will follow soon!
         </p>
       </motion.div>
 
