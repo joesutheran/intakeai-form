@@ -73,6 +73,7 @@ export default function App() {
     const payload = {
       referrer_email: data.referrer_email,
       client_name: data.client_name,
+      client_email: data.client_email,
       biological_sex: data.biological_sex,
       age: Number(data.age),
       weight_kg: Number(data.weight_kg),

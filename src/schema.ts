@@ -6,6 +6,10 @@ export const formSchema = z.object({
     .min(1, 'Email is required')
     .email('Please enter a valid email'),
   client_name: z.string().min(1, 'Client name is required'),
+  client_email: z
+    .string()
+    .min(1, 'Client email is required')
+    .email('Please enter a valid email'),
 
   biological_sex: z.enum(['Male', 'Female'], {
     required_error: 'Please select biological sex',
@@ -59,6 +63,7 @@ export type FormData = z.infer<typeof formSchema>
 export const defaultValues = {
   referrer_email: '',
   client_name: '',
+  client_email: '',
   biological_sex: undefined,
   age: '' as unknown as number,
   weight_kg: '' as unknown as number,
@@ -76,7 +81,7 @@ export const defaultValues = {
 }
 
 export const stepFields: (keyof FormData)[][] = [
-  ['referrer_email', 'client_name'],
+  ['referrer_email', 'client_name', 'client_email'],
   ['biological_sex', 'age', 'weight_kg', 'height_cm'],
   ['training_goal', 'job_activity_level', 'training_sessions_per_week'],
   ['dietary_preference', 'dietary_restrictions', 'foods_to_avoid'],

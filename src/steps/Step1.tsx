@@ -8,7 +8,7 @@ export function Step1() {
   return (
     <div className="flex flex-col gap-5">
       <TextInput
-        label="Referrer email"
+        label="Referring Gym / Studio Email"
         type="email"
         placeholder="studio@example.com"
         error={errors.referrer_email?.message}
@@ -19,6 +19,13 @@ export function Step1() {
         placeholder="Jane Smith"
         error={errors.client_name?.message}
         {...register('client_name')}
+      />
+      <TextInput
+        label="Client email"
+        type="email"
+        placeholder="client@example.com"
+        error={errors.client_email?.message}
+        {...register('client_email')}
       />
     </div>
   )
