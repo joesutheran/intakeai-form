@@ -15,13 +15,13 @@ export function Step1() {
         {...register('referrer_email')}
       />
       <TextInput
-        label="Client name"
+        label="Client Name"
         placeholder="Jane Smith"
         error={errors.client_name?.message}
         {...register('client_name')}
       />
       <TextInput
-        label="Client email"
+        label="Client Email"
         type="email"
         placeholder="client@example.com"
         error={errors.client_email?.message}
